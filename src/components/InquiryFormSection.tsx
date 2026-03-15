@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
-import { toast } from "sonner";
 
 const TRUX_EASING: [number, number, number, number] = [0.2, 0, 0, 1];
 
@@ -17,18 +16,6 @@ const InquiryFormSection = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
   ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    toast.success("Inquiry submitted successfully. We'll be in touch within 24 hours.");
-    setFormData({
-      fullName: "",
-      businessName: "",
-      fleetSize: "",
-      primaryRoutes: "",
-      currentChallenges: "",
-    });
   };
 
   return (
@@ -59,7 +46,11 @@ const InquiryFormSection = () => {
           <h3 className="font-display text-2xl font-semibold mb-8 text-primary">
             Get Started
           </h3>
-          <form onSubmit={handleSubmit} className="space-y-6">
+          <form
+            action="https://formsubmit.co/ed84abfbf4c3079f2b1ef1d641b3774e"
+            method="POST"
+            className="space-y-6"
+          >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
                 <label className="block text-sm font-medium text-muted-foreground mb-2">
