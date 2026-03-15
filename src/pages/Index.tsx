@@ -5,6 +5,7 @@ import ProfitRecoverySlider from "@/components/ProfitRecoverySlider";
 import DashboardShowcase from "@/components/DashboardShowcase";
 import InquiryFormSection from "@/components/InquiryFormSection";
 import TechnicalPartnerSection from "@/components/TechnicalPartnerSection";
+import BrandLogo from "@/components/BrandLogo";
 
 const Index = () => {
   return (
@@ -12,9 +13,7 @@ const Index = () => {
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 px-6 md:px-12 lg:px-20 py-5 bg-background/60 backdrop-blur-xl border-b border-foreground/5">
         <div className="max-w-7xl mx-auto flex items-center justify-between">
-          <span className="font-display text-2xl font-bold tracking-tight text-foreground">
-            TRUX<span className="text-primary">.</span>
-          </span>
+          <BrandLogo />
           <div className="hidden md:flex items-center gap-8">
             <a href="#managed-edge" className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300">
               Features
@@ -53,9 +52,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-12 px-6 md:px-12 lg:px-20 border-t border-foreground/5">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-display text-lg font-bold tracking-tight text-foreground">
-            TRUX<span className="text-primary">.</span>
-          </span>
+          <BrandLogo size="sm" />
           <p className="text-muted-foreground text-sm">
             © {new Date().getFullYear()} TRUX Managed Services. Best Transport Management Software in India.
           </p>

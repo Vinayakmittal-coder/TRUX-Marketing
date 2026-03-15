@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Mail, MessageCircle, ShieldCheck } from "lucide-react";
-import partnerHeadshot from "@/assets/partner-headshot.jpg";
+import partnerHeadshot from "@/assets/partner-headshot.png";
 
 const TRUX_EASING: [number, number, number, number] = [0.2, 0, 0, 1];
 
